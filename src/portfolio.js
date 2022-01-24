@@ -176,7 +176,7 @@ const workExperiences = {
       company: "Eneza Telecom",
       companylogo: require("./assets/images/eneza.jpg"),
       date: "September 2021 – Present",
-      desc:"Worked on system design and feature addition.",
+      desc: "Worked on system design and feature addition.",
       descBullets: [
         "Worked on LeoFresh website with a team of Three",
         "Created deployments for firebase and firebase functions"
@@ -191,7 +191,7 @@ const workExperiences = {
       descBullets: [
         "Designed and Debugged the supply chain systema.",
         "Worked on a Data  pipeline to extract crucial information about farmers, crops & donor companies.",
-        "Worked on a sisulizer translation verification tool in a team of 3",
+        "Worked on a sisulizer translation verification tool in a team of 3"
       ]
     },
     {
@@ -202,8 +202,7 @@ const workExperiences = {
       desc: "Worked on a mobile application for garage pooling",
       descBullets: [
         "Designed and programmed the React Native application.",
-        "Worked on a Data  pipeline to extract crucial information about car owners and mechanics.",
-        
+        "Worked on a Data  pipeline to extract crucial information about car owners and mechanics."
       ]
     }
   ]
