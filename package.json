@@ -1,5 +1,5 @@
 {
-  "homepage": "https://ekivutha.github.io",
+  "homepage": "https://EKivutha.github.io/portfolio_dev",
   "name": "portfolio_dev",
   "version": "0.1.0",
   "private": true,
@@ -25,7 +25,7 @@
     "predeploy": "npm run build",
     "start": "node fetch.js && react-scripts start",
     "build": "node fetch.js && react-scripts build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -b gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "format": "prettier --write \"./**/*.{js,css,json,scss}\"",
