@@ -28,7 +28,7 @@ const socialMediaLinks = {
   linkedin: "https://www.linkedin.com/in/ezra-kivutha-6bab5b18a/",
   gmail: "mutunjau@gmail.com",
   gitlab: "https://gitlab.com/EKivutha",
-  medium: "https://medium.com/EKivutha",
+  medium: "https://medium.com/@mutunjau",
   stackoverflow: "https://stackoverflow.com/users/11274093/ekivutha",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
