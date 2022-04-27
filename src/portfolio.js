@@ -12,7 +12,7 @@ const illustration = {
 
 const greeting = {
   username: "Ezra Kivutha",
-  title: "Hi all, I'm Ezra",
+  title: "Hi there, I'm Ezra",
   subTitle: emoji(
     "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
   ),
@@ -108,7 +108,7 @@ https://fontawesome.com/icons?d=gallery */
     },
     {
       skillName: "Go",
-      fontAwesomeClassname: "fab fa-golang"
+      fontAwesomeClassname: "fa-brands fa-golang"
     },
     {
       skillName: "docker",
@@ -172,10 +172,34 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
+      role: "Systems Architect ",
+      company: "Sera Pay",
+      companylogo: require("./assets/images/eneza.jpg"),
+      date: "April 2022 – Present",
+      desc: "Worked on system design and feature addition.",
+      descBullets: [
+        "Worked on Mobile application to provide Escrow services",
+        "Helped with business development strategies",
+        "Created deployments for firebase and firebase functions"
+      ]
+    },
+    {
+      role: "Systems Architect",
+      company: "Traffic Watch Africa",
+      companylogo: require("./assets/images/trafficwatchafrica.png"),
+      date: "November 2021 – Present",
+      desc: "Worked on system design and feature addition.",
+      descBullets: [
+        "https://trafficwatch.africa/",
+        "Worked on LeoFresh website with a team of Three",
+        "Created deployments for firebase and firebase functions"
+      ]
+    },
+    {
       role: "Systems Architect",
       company: "Eneza Telecom",
       companylogo: require("./assets/images/eneza.jpg"),
-      date: "September 2021 – Present",
+      date: "September 2021 – Jan 2022",
       desc: "Worked on system design and feature addition.",
       descBullets: [
         "Worked on LeoFresh website with a team of Three",
@@ -189,7 +213,7 @@ const workExperiences = {
       date: "May 2020 – September 2021",
       desc: "Majorly worked on SUpply chain systems and data pipelines",
       descBullets: [
-        "Designed and Debugged the supply chain systema.",
+        "Designed and Debugged the supply chain system.",
         "Worked on a Data  pipeline to extract crucial information about farmers, crops & donor companies.",
         "Worked on a sisulizer translation verification tool in a team of 3"
       ]
@@ -201,6 +225,18 @@ const workExperiences = {
       date: "Aug 2020 – Jan 2021",
       desc: "Worked on a mobile application for garage pooling",
       descBullets: [
+        "Designed and programmed the React Native application.",
+        "Worked on a Data  pipeline to extract crucial information about car owners and mechanics."
+      ]
+    },
+    {
+      role: "Software Systems Consultant ",
+      company: "NewHam Security",
+      companylogo: require("./assets/images/newham.webp"),
+      date: "Aug 2020 – Jan 2021",
+      desc: "Worked on a mobile application for garage pooling",
+      descBullets: [
+        "https://newnham.co.ke/",
         "Designed and programmed the React Native application.",
         "Worked on a Data  pipeline to extract crucial information about car owners and mechanics."
       ]
@@ -223,25 +259,25 @@ const bigProjects = {
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
+      image: require("./assets/images/trafficwatchafrica.png"),
       projectName: "Traffic Analysis",
       projectDesc: "Count number of cars and their speed",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://saayahealth.com/"
+          url: "http://trafficwatch.africa/"
         }
         //  you can add extra buttons here.
       ]
     },
     {
       image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectName: "SeraPay",
+      projectDesc: "Escrow services",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://nextu.se/"
+          url: "http://searapay.se/"
         }
       ]
     }
