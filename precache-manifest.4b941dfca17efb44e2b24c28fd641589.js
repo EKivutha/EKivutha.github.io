@@ -1,43 +1,43 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b587c5265aa3c54965c8324ec2c58f34",
+    "revision": "f9d0e3ecb7d5b871900b3025ca394ce6",
     "url": "/index.html"
   },
   {
-    "revision": "37645fcd8acbdcea2dd8",
+    "revision": "834a29bde29ee7327ca3",
     "url": "/static/css/3.df879eac.chunk.css"
   },
   {
-    "revision": "16c8952690ff02169422",
+    "revision": "d512eb2b03b46e915943",
     "url": "/static/css/4.e91a4b36.chunk.css"
   },
   {
-    "revision": "a91ef69985192c94638f",
+    "revision": "fa13686e97e95d78f522",
     "url": "/static/css/main.361bf9f6.chunk.css"
   },
   {
-    "revision": "73ac3649e925d5d4b8fc",
-    "url": "/static/js/2.825a058a.chunk.js"
+    "revision": "b399dbdacfbf34da2de2",
+    "url": "/static/js/2.f6a35198.chunk.js"
   },
   {
     "revision": "8c330c4aa54d3eeba79a7f9bae77e3e4",
-    "url": "/static/js/2.825a058a.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.f6a35198.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "37645fcd8acbdcea2dd8",
-    "url": "/static/js/3.55151ae2.chunk.js"
+    "revision": "834a29bde29ee7327ca3",
+    "url": "/static/js/3.245298d4.chunk.js"
   },
   {
-    "revision": "16c8952690ff02169422",
-    "url": "/static/js/4.874ca495.chunk.js"
+    "revision": "d512eb2b03b46e915943",
+    "url": "/static/js/4.1ab2234f.chunk.js"
   },
   {
-    "revision": "a91ef69985192c94638f",
-    "url": "/static/js/main.4c9d3364.chunk.js"
+    "revision": "fa13686e97e95d78f522",
+    "url": "/static/js/main.ae4a3fef.chunk.js"
   },
   {
-    "revision": "8da702f93bb7c37f8809",
-    "url": "/static/js/runtime-main.f705eede.js"
+    "revision": "557ee3e60cc621ab72a5",
+    "url": "/static/js/runtime-main.339f7d78.js"
   },
   {
     "revision": "21f233e19402cc4a66866a7f31191f0d",
@@ -76,6 +76,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/manOnTable.52be3144.svg"
   },
   {
+    "revision": "18a523b3c79acf2b18c880b0e9e246ef",
+    "url": "/static/media/newham.18a523b3.webp"
+  },
+  {
     "revision": "829ad0a1deef4d7295adfecdf12df2be",
     "url": "/static/media/nextuLogo.829ad0a1.webp"
   },
@@ -84,15 +88,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/pwaLogo.ee62cb58.webp"
   },
   {
-    "revision": "25018d29d5ab115bc51c3e9a2d92f90f",
-    "url": "/static/media/saayaHealthLogo.25018d29.webp"
-  },
-  {
     "revision": "3440939881da8339d1597e8d77cdf850",
     "url": "/static/media/skill.34409398.svg"
   },
   {
     "revision": "13780cdd0144cacdef25486e2c2503f8",
     "url": "/static/media/talksCardBack.13780cdd.svg"
+  },
+  {
+    "revision": "02262740b565317864450cedba1a7637",
+    "url": "/static/media/trafficwatchafrica.02262740.png"
   }
 ]);
