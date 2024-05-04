@@ -172,10 +172,34 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
+      role: "Developer Operations Engineer II",
+      company: "Sera Pay",
+      companylogo: require("./assets/images/eneza.jpg"),
+      date: "Febuary 2023 – Present",
+      desc: "Worked on system design and feature addition.",
+      descBullets: [
+        "Implemented Security Operations accross all aplications",
+        "Automated deployemnts, leading to reduced deployment times and no downtimes on the systems",
+        "Strategized on best Agile practices"
+      ]
+    },
+    {
+      role: "Tech Lead ",
+      company: "Africa Blockchain Creatives",
+      companylogo: require("./assets/images/eneza.jpg"),
+      date: "July 2022 – August 2023",
+      desc: "Worked on system design and feature addition.",
+      descBullets: [
+        "Led the design of a web extension wallet to transfer crypto",
+        "Helped with business development strategies for the crpto wallet",
+        "Led a team of four engineers to develop onchain, Web.js contracts and implement the frontend"
+      ]
+    },
+    {
       role: "Systems Architect ",
       company: "Sera Pay",
       companylogo: require("./assets/images/eneza.jpg"),
-      date: "April 2022 – Present",
+      date: "April 2022 – August 2022",
       desc: "Worked on system design and feature addition.",
       descBullets: [
         "Worked on Mobile application to provide Escrow services",
@@ -187,7 +211,7 @@ const workExperiences = {
       role: "Systems Architect",
       company: "Traffic Watch Africa",
       companylogo: require("./assets/images/trafficwatchafrica.png"),
-      date: "November 2021 – Present",
+      date: "November 2021 – April 2022",
       desc: "Worked on system design and feature addition.",
       descBullets: [
         "https://trafficwatch.africa/",
