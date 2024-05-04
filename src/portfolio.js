@@ -173,7 +173,7 @@ const workExperiences = {
   experience: [
     {
       role: "Developer Operations Engineer II",
-      company: "Sera Pay",
+      company: "Standard Group",
       companylogo: require("./assets/images/eneza.jpg"),
       date: "Febuary 2023 – Present",
       desc: "Worked on system design and feature addition.",
