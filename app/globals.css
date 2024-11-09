@@ -14,7 +14,7 @@
 
 @layer base {
   body{
-    @apply font-primary;
+    @apply font-primary bg-primary text-white leading-loose;
   }
   :root {
     --radius: 0.5rem;
