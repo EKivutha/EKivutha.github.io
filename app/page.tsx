@@ -1,5 +1,6 @@
 import Photo from '@/components/Photo'
 import Social from '@/components/Social'
+import Statistics from '@/components/Statistics'
 import { Button } from '@/components/ui/button'
 import React from 'react'
 import { FiDownload } from "react-icons/fi"
@@ -27,7 +28,7 @@ const Home = () => {
               frameworks.
             </p>
             {/* button and socials */}
-            <div className="flex flex-col xl:flex-row items-center gap-4 xl:gap-6">
+            <div className="flex flex-col xl:flex-row items-center gap-4 xl:gap-6 mb-9">
               <Button
                 variant="outline"
                 size="lg"
@@ -42,6 +43,9 @@ const Home = () => {
                 <span>Download Cover Letter</span>
                 <FiDownload className="text-xl" />
               </Button>
+
+            </div>
+            <div className="flex flex-col xl:flex-row items-center xl:ml-20 gap-4 xl:gap-6">
               <Social
                 containerStyles="flex gap-5"
                 iconStyles="w-9 h-9 border border-accent 
@@ -51,13 +55,14 @@ const Home = () => {
                         hover:transition-all duration-500"/>
             </div>
           </div>
-          <div className="order-1 xl:order-none mb-8 xl:mb-0">
+          <div className="order-1 xl:order-none mb-8 m-5 xl:mb-0">
             {/* photo */}
             <Photo />
           </div>
 
         </div>
       </div>
+      <Statistics/>
     </section>
   )
 }
