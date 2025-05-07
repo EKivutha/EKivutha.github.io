@@ -3,6 +3,9 @@
 import { } from 'react-icons/fa';
 import { } from 'react-icons/si'
 import React from 'react'
+import { motion } from 'framer-motion';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { ScrollArea } from '@/components/ui/scroll-area';
 
 const about = {
     title: '',
@@ -30,26 +33,26 @@ const about = {
         },
     ]
 }
-const eperience = {
-    title: '',
+const experience = {
+    title: 'Software Engineer',
     description: '',
     info: [
         {
-            company: 'Stanbic Bank',
+            company: 'Standard Bank',
             position: 'Developer Operation II',
             duration: '2023-Present',
-            responsibilities : "\
+            responsibilities: "\
             Developed and maintained web applications using React.js, Node.js, and Express to enhance user experience and performance.\
             Collaborated with cross-functional teams to define and implement new features, resulting in a 20% increase in user engagement.\
             Optimized codebase for efficiency, reducing load times by 30% through refactoring and implementing caching strategies.\
             Implemented CI/CD pipelines using Jenkins and Docker, improving deployment frequency and reducing downtime.\
             Conducted code reviews and provided constructive feedback to peers, fostering a culture of continuous improvement.\
-            Led a team of junior developers, mentoring them on best practices and contributing to their professional growth."        
+            Led a team of junior developers, mentoring them on best practices and contributing to their professional growth."
         },
         {
             company: 'Adanian Labs',
-            position: '',
-            duration: '',
+            position: 'Product Owner',
+            duration: '2022-2023',
             responsibilities: "\
             Design, develop, and implement blockchain solutions, including smart contracts and decentralized applications (DApps).\
             Collaborate with cross-functional teams to define and document project requirements.\
@@ -61,8 +64,8 @@ const eperience = {
         },
         {
             company: 'Kibz Tech',
-            position: '',
-            duration: '',
+            position: 'Development Lead',
+            duration: '2017-Present',
             responsibilities: '\
             Founded and grew InnovativeTech Solutions from a startup to a leading provider of cutting-edge software solutions, generating over $10 million in annual revenue.\
             Spearheaded the development of multiple successful products, including a revolutionary AI-powered analytics platform that significantly improved client decision-making and operational efficiency.\
@@ -75,8 +78,8 @@ const eperience = {
         },
         {
             company: 'Omdena',
-            position: '',
-            duration: '',
+            position: 'Data Scientist',
+            duration: '2020-Present',
             responsibilities: '\
             Designed and implemented machine learning models to predict customer behavior, leading to a 15% increase in sales and 20% improvement in customer retention.\
             Developed and maintained data pipelines and ETL processes using Python and Apache Spark, ensuring data integrity and availability for analysis.\
@@ -87,9 +90,9 @@ const eperience = {
         },
         {
             company: 'Eprod Solutions',
-            position: '',
-            duration: '',
-            responsibilities : "\
+            position: 'Software Engineer',
+            duration: '2021-2022',
+            responsibilities: "\
             Developed and maintained web applications using React.js, Node.js, and Express to enhance user experience and performance.\
             Collaborated with cross-functional teams to define and implement new features, resulting in a 20% increase in user engagement.\
             Optimized codebase for efficiency, reducing load times by 30% through refactoring and implementing caching strategies.\
@@ -101,9 +104,54 @@ const eperience = {
 }
 const Resume = () => {
     return (
-        <div>
-            resume page
-        </div>
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{
+                opacity: 1,
+                transition: { delay: 2.4, duration: 0.4, ease: "easeIn" }
+            }}
+            className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0" >
+            <div className="container mx-auto">
+                <Tabs defaultValue="experience"
+                    className="flex flex-col xl:flex-row gap-[60px]">
+                    <TabsList className='flex flex-col w-full max-w-[300px] mx-auto xl:mx-0'>
+                        <TabsTrigger value='experience'>Exprience</TabsTrigger>
+                        <TabsTrigger value='education'>Education</TabsTrigger>
+                        <TabsTrigger value='skills'>Skills</TabsTrigger>
+                        <TabsTrigger value='about'>About Me</TabsTrigger>
+                    </TabsList>
+
+                    <div className='min-h-[70vh] w-full'>
+                        <TabsContent value='experience' className='w-full'>
+                            <div className='flex flex-col gap-[30px] text-center xl:text-left'>
+                                <h3 className='text-4xl font-bold'>{experience.title}</h3>
+                                <p className='max-w-[600px] text-white/60 mx-auto'>{experience.description}</p>
+                                <ScrollArea className='h-[400px]'>
+                                    <ul className='grid grid-cols-1 lg:grid-cols-2 gap-[30px]'>
+                                        {experience.info.map((item, index) => {
+                                            return <li key={index}
+                                                className='bg-[#232329] h=[184px] py-6 px-10 rounded-2xl \
+                                            flex flex-col justify-center items-center lg:items-start gap-1'>
+                                                <span className='text-accent'>{item.duration}</span>
+                                                <h3 className='text-xl min-w-[260px] max-h-[60px]\
+                                                text-center lg:text-left'>
+                                                    {item.position}
+                                                </h3>
+                                                <div className='flex items-center gap-3'>
+                                                    <span className='w-2 h-2 rounded-full bg-accent'></span>
+                                                    <p className='text-white/60'>{item.company}</p>
+                                                </div>
+                                            </li>
+                                        })}
+                                    </ul>
+                                </ScrollArea>
+                            </div>
+                        </TabsContent>
+
+                    </div>
+                </Tabs>
+            </div>
+        </motion.div>
     )
 }
 
